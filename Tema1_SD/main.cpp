@@ -87,6 +87,7 @@ void sortari()
 
                 for (int i = 0; i < N; ++i)
                     fin >> v[i];
+                vector <int> cv(v);
 
                 long long timp_start = clock();
 
@@ -118,7 +119,7 @@ void sortari()
                 }
 
                 long long timp_end = clock();
-                bool rez_sort = test_sort(v);
+                bool rez_sort = test_sort(v, cv);
                 double timp_sortare = 1.0 * (timp_end - timp_start) / CLOCKS_PER_SEC;
                 Test test(t, N, Max, timp_sortare, metode_sortare[m], rez_sort);
                 vt.push_back(test);
