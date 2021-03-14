@@ -242,15 +242,12 @@ void radixsort(vector <int> &v, int baza)
         count_sort(v, place, baza);
 }
 
-bool test_sort(vector <int> &v)
+bool test_sort(vector <int> &v, vector <int> &cv)
 {
-    vector <int> cv(v);
     std::sort(cv.begin(), cv.end());
     for(int i=0; i<v.size(); ++i)
         if(v[i] != cv[i])
-        {
             return false;
-        }
-
+  
     return true;
 }
