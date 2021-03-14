@@ -21,6 +21,6 @@ void count_sort(vector <int> &v, long long place, int baza);
 void count_sort_bit(vector <int> &v, int place, long long baza);
 void radixsort_bit(vector <int> &v, int nr_biti);
 void radixsort(vector <int> &v, int baza);
-bool test_sort(vector <int> &v);
+bool test_sort(vector <int> &v, vector <int> &cv);
 
 #endif //TEMA1_SD_SORTARI_H
